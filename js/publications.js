@@ -76,6 +76,80 @@ var peer_review_pubs = [
 ]
 
 
+var peer_review_pubs_links = [
+    "",
+    , "Publications/Chen_He_OcSci_2015.pdf"
+    , "publications/HeHeZhang_GMDD2015.pdf"
+    , "Publications/He_et_al-JAMES2015.pdf"
+    , "Publications/Huangetal_CSR2015.pdf"
+    , "Publications/Kourafalou_etal_2015.pdf"
+    , "Publications/Li_etal_JGRO_2015.pdf"
+    , "Publications/Northetal_ERL_2015.pdf"
+    , "Publications/Ren_JGRG_2015.pdf"
+    , "Publications/Tianetal_GBC2015.pdf"
+    , ""
+    , "Publications/Xue_etal_JOO_2015_redact.pdf"
+    , "Publications/Zengetal_CSR2015.pdf"
+    , "Publications/Zeng_etal_JAOT2015.pdf"
+    , "Publications/Zengetal_RSL2015.pdf"
+    , "publications/Chen_osd-11-2755-2014.pdf"
+    , "publications/Chenetal_JGRO_2014_final.pdf"
+    , "publications/Gong_etal_OD2014.pdf"
+    , "publications/LiandHe_2014_RSE.pdf",
+    "publications/Li_He_McGillicuddy_DSRII_2014.pdf",
+    "http://scitation.aip.org/content/asa/journal/jasa/136/4/10.1121/1.4899624",
+    "publications/Nelson_etal_2014.pdf",
+    "publications/Qian_Li_He_Eggleston_Nov2014.pdf",
+    "publications/Tao_etal_GRL_2014.pdf",
+    "Publications/Xueetal_BGD_2014.pdf",
+    "Publications/Zambonetal_Ivan_OD2014.pdf",
+    "publications/Zambon_He_Warner_GRL2014.pdf",
+    "publications/Castelao_HE_JGR.pdf",
+    "publications/Lietal_DSRII2013.pdf",
+    "publications/McGillicuddyetal_DSRII_2013.pdf",
+    "publications/Oeyetal_OD2013.pdf",
+    "publications/Putman&He_JRSI2013.pdf",
+    "publications/Putmanetal_BL_2013.pdf",
+    "publications/Xue_BG2013.pdf",
+    "publications/Nelson&He_RMS2012.pdf",
+    "publications/Olabarietaetal_OM2012.pdf",
+    "publications/Xueetal_CSR2012.pdf",
+    "publications/Yaoetal_OD2012.pdf",
+    "publications/Youngetal_ICB2012.pdf",
+    "publications/HE_BG-2011.pdf",
+    "publications/McGillicuddy_L&O_2011.pdf",
+    "publications/Northetal_ch18.pdf",
+    "publications/Chen&HE_JPO2010.pdf",
+    "publications/He_GRL2010.pdf",
+    "publications/Hyum&HE_JMS2010.pdf",
+    "publications/Miles&He_CSR2010.pdf",
+    "publications/Warner_OM2010.pdf",
+    "publications/Chassignet_Oceanography2009.pdf",
+    "publications/Lehmann_Fennel_He_2009.pdf",
+    "publications/Li_CSR2009.pdf",
+    "publications/Miles_GRL2008.pdf",
+    "publications/Walsh_PIO09.pdf",
+    "publications/HE_JGR2008_part1.pdf",
+    "publications/HE_JGR2008_part2.pdf",
+    "publications/Lenesetalcsr08.pdf",
+    "publications/Milroy_CRS2008.pdf",
+    "publications/HeWilkin_MVCOtides_JGR2006.pdf",
+    "publications/Liu_JTECHO2005.pdf",
+    "publications/Anderson_DSR2005.pdf",
+    "publications/HE_JGR2005.pdf",
+    "",
+    "publications/HE_GRL2004.pdf",
+    "publications/weisberg_Oceanography2004.pdf",
+    "publications/HE_JPO2003.pdf",
+    "publications/HE_CSR2003.pdf",
+    "publications/HE_GRL2003.pdf",
+    "publications/Jollif_GRL2003.pdf",
+    "publications/Walsh_JGR03.pdf",
+    "publications/Weisberg_JGR2003.pdf",
+    "publications/HE_JPO2002.pdf",
+    "publications/HE_CSR2002.pdf",
+    "publications/He_Weisberg_2001.pdf"
+]
 
 
 
