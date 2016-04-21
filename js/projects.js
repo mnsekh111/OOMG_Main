@@ -106,4 +106,170 @@ project_list = [
 ]
 
 
+past_project_list = [
+    {
+        name: "Developing an Integrated Modeling-Observing Prediction and Assessment System in Support of North Carolina Renewable Ocean Energy Studies ",
+        sponsor: "UNC Coastal Studies Institute ",
+        icon: "./images/project_images/UNC_CSI_logo2.jpg",
+
+    },
+
+    {
+        name: "Development of Observational Products and Coupled Models of Land-Ocean-Atmospheric Fluxes in the Mississippi River Watershed and Gulf of Mexico in Support of Carbon Monitoring",
+        sponsor: "NASA ",
+        icon: "./images/project_images/nasa.jpg",
+
+    },
+
+    {
+        name: "Analysis of Loop Current Observations ",
+        sponsor: "Leidos, Inc./Department of the Interior ",
+        icon: "./images/project_images/BOEM_logo.jpg",
+
+    },
+
+
+    {
+        name: "Circulation Nowcast/Forecast System for the South Atlantic Bight and Gulf of Mexico ",
+        sponsor: "SECOORA/NOAA",
+        icon: "./images/project_images/secoora.jpg",
+
+    },
+
+
+    {
+        name: "Connectivity Between Deep and Shallow Ecosystems: Ecosystem-Based Management of New Shelf Edge MPAs ",
+        sponsor: "NOAA ",
+        icon: "./images/project_images/noaa.jpg",
+
+    },
+
+
+    {
+        name: "Assessing Impacts of Climate and Land Use Change on Terrestrial-Ocean Fluxes of Carbon and Nutrients and Their Cycling in Coastal Ecosystems",
+        sponsor: "NASA",
+        icon: "./images/project_images/nasa.jpg",
+
+    },
+
+
+    {
+        name: "Rapid Environmental Assessment Using an Integrated Coastal Ocean Observation Modeling System",
+        sponsor: " Office of Naval Research - Multidisciplinary University Research Initiatives",
+        icon: "./images/project_images/onr.jpg",
+
+    },
+
+
+    {
+        name: "Dynamics of Alexandrium fundyense Distributions in the Gulf of Maine: An Observational and Modeling Study of Nearshore and Offshore Shellfish Toxicity, Vertical Toxin Flux, and Bloom Dynamics in a Complex Shelf Sea ",
+        sponsor: "NOAA-ECOHAB ",
+        icon: "./images/project_images/noaa.jpg",
+
+    },
+
+
+    {
+        name: "Collaborative Research: Frontal Interaction and Atmospheric Forcing North of Cape Hatteras: an Analysis and Modeling Study ",
+        sponsor: "NSF",
+        icon: "./images/project_images/nsf.jpg",
+
+    },
+
+    {
+        name: "Eddy-Wind-Topography Interaction Dynamics",
+        sponsor: "Office of Naval Research - Physical Oceanography ",
+        icon: "./images/project_images/onr.jpg",
+
+    },
+
+    {
+        name: "Carolina Coastal Processes Modeling Project ",
+        sponsor: "USGS",
+        icon: "./images/project_images/USGS.jpg",
+
+    },
+
+    {
+        name: "Implementation of Regional Integrated ocean Observing Systems Support of RCOOS Development in SECOORA - Development of a Prototype to Link Real Time Sea State with Fisheries Data For Use By Recreational Fishermen and Scientists ",
+        sponsor: "NOAA/SECOORA",
+        icon: "./images/project_images/noaa.jpg",
+
+    },
+
+    {
+        name: "Implementation of Regional Integrated Ocean Observing Systems Support of RCOOS Development In SECCORA - Circulation Modeling ",
+        sponsor: "NOAA/ South Carolina SeaGrant ",
+        icon: "./images/project_images/noaa.jpg",
+
+    },
+
+    {
+        name: "3-D Model Forecast of the Vertical and Horizontal Distributions of Oil Plumes Arising From the Deepwater Horizon Spill ",
+        sponsor: "NSF",
+        icon: "./images/project_images/nsf.jpg",
+
+    },
+
+    {
+        name: "GOMEX 3-D Operational Ocean Forecast System Pilot Project ",
+        sponsor: "Research Partnership to Secure Energy for America/DOE",
+        icon: "./images/project_images/rpsea.jpg",
+
+    },
+
+    {
+        name: "Modeling the Vertical and Horizontal Distributions of the Oil Plumes Arising from the Deepwater Horizon Spill in the Southeast U.S. Coastal Waters ",
+        sponsor: "NOAA/Sea Grant ",
+        icon: "./images/project_images/seagrant.jpg",
+
+    },
+
+    {
+        name: "Investigation of Coastal Phytoplankton Dynamics by Adjoint Assimilation of Satellite Ocean Color Data ",
+        sponsor: "NASA New Investigator Program ",
+        icon: "./images/project_images/nasa.jpg",
+
+    },
+
+    {
+        name: "Community Sediment Transport Model ",
+        sponsor: "National Oceanographic Partnership Program",
+        icon: "./images/project_images/nopp.jpg",
+
+    },
+
+    {
+        name: "Understanding Seasonal Evolutions of Coastal Hydrography Using Novel Glider Technology ",
+        sponsor: "North Carolina State University",
+        icon: "./images/project_images/ncsu.jpg",
+
+    },
+
+    {
+        name: "Data Assimilative Modeling of the Adjacent Coastal Water of the Martha's Vineyard Coastal Observatory ",
+        sponsor: "Woods Hole Oceanographic Institution",
+        icon: "./images/project_images/woods.jpg",
+
+    },
+
+    {
+        name: "Evaluation of Global Ocean Data Assimilation Experiment (GODAE) Hindcast in Providing Open Boundary Conditions for High-Resolution Coastal Circulation Modeling ",
+        sponsor: "Woods Hole Oceanographic Institution",
+        icon: "./images/project_images/woods.jpg",
+
+    },
+
+    {
+        name: "Development of a Combined Hydrodynamic, Sediment Transport and Nutrient Response Model System for Falls of the Neuse Reservoir, Neuse River Basin ",
+        sponsor: "North Carolina Department of Environmental Resources",
+        icon: "./images/project_images/NCDENR_logo.jpg",
+
+    },
+
+
+
+]
+
+
 
