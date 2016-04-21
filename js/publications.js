@@ -151,6 +151,18 @@ var peer_review_pubs_links = [
     "publications/He_Weisberg_2001.pdf"
 ]
 
+var in_review = [
+    "<b>He, R., Y. Li</b>, D. J. McGillicuddy, and D. Anderson, Ensemble seasonal forecasting of <i>Alexandrium  fundyense</i> blooms in the Gulf of Maine, <i>Deep-Sea Research II</i>."
+    , "<b>Li, Y., R. He</b>, and D. McGillicuddy, Gulf of Maine <i>Alexandrium fundyense </i>bloom in 2008: Bloom evolution diagnostics from a coupled biophysical modeling approach, <i>Harmful Algae</i>."
+    , "Lu, C., H. Tian, S. Lohrenz, W. Ren, J. Yang, W. Cai, B. Tao, M. Liu, B. Zhang, Q. Yang, K. Banger, S. Pan, <b>R. He,</b> and C. Hopkinson. Climate extremes decouple water and nitrogen fluxes from land to oceans, <i>Environmental Sciences and Technology,</i> in review."
+    , "Olabarrieta, M., J. Warner, B. Armstrong, <b>J. Zambon</b>, and <b>R. He</b>, Effects of ocean-wave-atmosphere coupling on wind and wave simulations during Hurricane Isabel, <i>Geophysical Research Letters</i>."
+    , "Ren, W., H. Tian, W. Cai, <b>R. He</b>, S. Lohrenz, and C. Hopkinson. Increased dissolved organic carbon export from the Mississippi River Basin as influenced by natural and anthropogenic forcing, <i>Proceedings of the National Academy of Sciences</i>."
+    , "Shropshire, T., Y. Li, and <b>R. He</b>, Storm impact on sea surface tmeperature and chlorophyll a in the northwest Atlantic based on daily cloud-free satellite data reconstructions, <i>Scientific Reports</i>."
+    , "Tian, H., W. Ren, J. Yang, B. Tao, W. Cai, S. Lohrenz, M. Liu, Q. Yang, C. Lu, B. Zhang, K. Banger, S. Pan, C. Hopkinson, and <b>R. He</b>. Short-term climate extreme events control recent terrestrial carbon export from the Mississippi River basin, <i>Geophysical Research Letters</i>."
+    , "<p><b>Yao, Z., R. He, J. Zambon, Z. Xue</b>, and <b>Y. Liu</b>, An integrated, three dimensional, coupled ocean circulation, wave, and atmosphere nowcast and forecast system developed for the U.S. East Coast, Gulf of Mexico, and Intra-Americas Sea, <i>Ocean Dynamics: Topical Collection on Coastal Ocean Forecasting Science</i>."
+]
+
+
 
 
 
