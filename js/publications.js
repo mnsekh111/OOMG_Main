@@ -163,7 +163,21 @@ var in_review = [
 ]
 
 
+var tech_rep = [
+    "Anderson, D. M., D. J. McGillicuddy, Jr., B. A. Keafer, <b>R. He</b>, and D. W. Townsend (2011) Population Dynamics of <i>Alexandrium fundyense</i> in the Gulf of Mexico: Outlook for Improved Management and Forecasting, pp 57-86, invited review paper, 14th International Conference on Harmful Algae, Crete, Greece, Nov 2010. ",
+    "Gawarkiewicz, G.G.,<b> J. Nelson, R. He</b>, et al. (2011) NSF OOI White Paper on Middle Atlantic Bight Shelfbreak Frontal and Exchange Processes. ",
+    "Anderson, D.M., D. J. McGillicuddy, Jr., B. A. Keafer , R. He, and D.W. Townsend (2010). Bloom Dynamics of the Red Tide Dinoflagellate <i>Alexandrium fundyense</i> in the Gulf of Maine: A Synthesis and Progress Towards a Forecasting Capability. ICES CM 2010/N:01.",
+    "Anderson, D. M., P. S. Libby, M. J. Mickelson,  D. G. Borkman, <b>R. He</b>, and D. J. McGillicuddy (2007) The 2005 New England Red Tide of <i>Alexandrium fundyense</i>: Observations, Causes, and Potential Outfall Linkages. Boston: MWRA Report 2007-10.",
+    "<b>He, R.</b>, I. Bang, K. P. Edwards, C. N. K. Mooers, R. H. Weisberg, and F. Werner (2005), Coastal Ocean Response to Extratropical Storms in March 2001: A Retrospective Analysis Using Sub-regional Coastal Ocean Models of the Southeast Atlantic Coastal Ocean Observing System (SEACOOS), SEACOOS Tech. rep."
+]
 
+var tech_rep_links = [
+    "publications/ICHA14-4.pdf",
+    "publications/PioneerWhitePaper_Aug2011.pdf",
+    "",
+    "",
+    "",
+]
 
 
 
