@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .outer_padding {
+            padding: 0px;
+        }
+
+        .outer_margin {
+            margin: 2px;
+        }
+
+        .item {
+            background-color: #0249B7;
+            color: white;
+        }
+
+        .global_background {
+            background-color: #001162;
+            color: #FFFFFF;
+        }
+
+        .navbar_margin {
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+
+
+    </style>
+</head>
+<body class="global_background">
+<nav class="navbar navbar-inverse navbar_margin">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1"
+                    aria-expanded="false"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+            <a class="navbar-brand" href="#">OOMG</a></div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="myDefaultNavbar1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="publication.html">Publications</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="opportunity.html">Opportunities</a></li>
+            </ul>
+            </li>
+            </ul>
+            </form>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<section style="margin: 20px">
+    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 outer_padding">
+        <div class="outer_margin">
+            <div class=" item"><img class="img-responsive" alt="CNAPS"
+                                    style="width: 140px; height: 140px; float:left;margin-right: 15px"
+                                    src="./images/product_images/CNAPS_thumb.jpg"
+                                    data-holder-rendered="true">
+                <h3>CNAPS</h3>
+                <p style="margin: 20px">The Coupled Northwest Atlantic Prediction System (CNAPS) is a three-dimensional
+                    marine environment
+                    nowcast and forecast model developed by the Ocean Observing and Modeling Group. This fully coupled
+                    ocean circulation, wave, and atmosphere modeling system predicts conditions over a wide area of the
+                    coastal northwest Atlantic Ocean on a daily basis. The model domain covers from the eastern edge of
+                    Nova Scotia to the north coast of Venezuela, including the Gulf of Maine, Middle Atlantic Bight,
+                    South Atlantic Bight, Gulf of Mexico, Caribbean Sea, and western Sargasso Sea.
+                    <br>Maps of model-generated regional dynamics are organized into three sections:
+                <ul>
+                    <li><b>Marine Weather</b>, with variables of wind speed at 10 m above sea surface, air temperature
+                        at 2 m above sea surface, and sea-level air pressure;
+                    </li>
+                    <li><b>Ocean Waves</b>, showing significant wave height and direction;</li>
+                    <li><b>Ocean Circulation</b>, with variables of ocean temperature, salinity, and currents that can
+                        be displayed at specific depths.
+                    </li>
+                </ul>
+                </p>
+                <p><b>Virtual Oceanographer</b> allows users to take on the role of oceanographer, by collecting
+                    model-generated data. User-defined inquires include virtual transect (subsurface temperature,
+                    salinity, and velocity plots), virtual sounding (temperature and salinity profiles), and 72 hour
+                    particle trajectory prediction (Lagrangian drifters). <br>
+                    <b>Model Validation</b> presents observational data alongside model output for a visual comparison
+                    of model accuracy.
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+<!-- / FOOTER -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script>
+
+    $("#btnPeer").on("click", function () {
+        console.log("SHIT")
+        $("#myList").empty()
+        var i;
+        var len = peer_review_pubs.length;
+        for (i = 0; i < len; i++) {
+            $("#myList").append("<p>" + (len - i) + ".   " + peer_review_pubs[i] + "</p>");
+        }
+    });
+
+    $("#btnInRev").on("click", function () {
+        $("#myList").empty()
+        var i;
+        var len = in_review.length;
+        for (i = 0; i < len; i++) {
+            $("#myList").append("<p>" + (len - i) + ".   " + in_review[i] + "</p>");
+        }
+    });
+
+    $("#btnThes").on("click", function () {
+        $("#myList").empty()
+        var i;
+        var len = the_des.length;
+        for (i = 0; i < len; i++) {
+            $("#myList").append("<p>" + (len - i) + ".   " + the_des[i] + "</p>");
+        }
+    });
+
+    $("#btnTechRep").on("click", function () {
+        $("#myList").empty()
+        var i;
+        var len = tech_rep.length;
+        for (i = 0; i < len; i++) {
+            $("#myList").append("<p>" + (len - i) + ".   " + tech_rep[i] + "</p>");
+        }
+    });
+
+    $("#btnPeer").click()
+
+</script>
+</body>
+</html>
