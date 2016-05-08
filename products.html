@@ -11,14 +11,15 @@
     <style>
 
 
-        .outer_margin {
-            margin: 2px;
+        .inside-margin {
+            margin: 20px;
         }
 
         .item {
             background-color: #0249B7;
             padding-bottom: 10px;
             color: white;
+            min-height: 550px;
         }
 
         .global_background {
@@ -29,6 +30,10 @@
         .navbar_margin {
             margin-top: 0px;
             margin-bottom: 10px;
+        }
+
+        a {
+            color: #ec971f;
         }
 
 
@@ -64,7 +69,7 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
-<section style="margin: 20px">
+<section class="inside-margin">
     <div class="row">
 
         <!-- To add a new product copy from here to ........ -->
@@ -74,9 +79,8 @@
                                     style="width: 140px; height: 140px; float:left;margin-right: 15px"
                                     src="./images/product_images/CNAPS_thumb.jpg"
                                     data-holder-rendered="true">
-                <a href="http://omgsrv1.meas.ncsu.edu:8080/ocean-circulation-useast2/"><h3
-                        style="margin-top: 15px;color: #ffff00">CNAPS</h3></a>
-                <p style="margin: 20px"><span class="label label-success"> The Coupled Northwest Atlantic Prediction System (CNAPS)</span>
+                <h3 style="margin-top: 15px;color: #ffff00">CNAPS</h3>
+                <p class="inside-margin"><span class="label label-success"> The Coupled Northwest Atlantic Prediction System (CNAPS)</span>
                     is a
                     three-dimensional
                     marine environment
@@ -89,7 +93,7 @@
                     Nova Scotia to the north coast of Venezuela, including the Gulf of Maine, Middle Atlantic Bight,
                     South Atlantic Bight, Gulf of Mexico, Caribbean Sea, and western Sargasso Sea.
                     <br>Maps of model-generated regional dynamics are organized into three sections:
-                <ul>
+                <ul class="inside-margin">
                     <li><b>Marine Weather</b>, with variables of wind speed at 10 m above sea surface, air
                         temperature
                         at 2 m above sea surface, and sea-level air pressure;
@@ -101,7 +105,7 @@
                     </li>
                 </ul>
                 </p>
-                <p style="margin: 20px"><b>Virtual Oceanographer</b> allows users to take on the role of
+                <p class="inside-margin"><b>Virtual Oceanographer</b> allows users to take on the role of
                     oceanographer,
                     by
                     collecting
@@ -111,7 +115,13 @@
                     <b>Model Validation</b> presents observational data alongside model output for a visual
                     comparison
                     of model accuracy.
+                    <br>
+
                 </p>
+
+                <a class="inside-margin" href="http://omgsrv1.meas.ncsu.edu:8080/ocean-circulation-useast2/">Go to CNAPS
+                    Website</a>
+
             </div>
         </div>
         <!-- ...........to here-->
@@ -122,9 +132,10 @@
                                     style="width: 140px; height: 140px; float:left;margin-right: 15px"
                                     src="./images/product_images/SABGOM_thumb.JPG"
                                     data-holder-rendered="true">
-                <a href="http://omgsrv1.meas.ncsu.edu:8080/ocean-circulation/"><h3
-                        style="margin-top: 15px;color: #ffff00">SABGOM</h3></a>
-                <p style="margin: 20px"><span class="label label-success">The South Atlantic Bight - Gulf of Mexico</span> (SABGOM) model is a three-dimensional marine environment
+                <h3 style="margin-top: 15px;color: #ffff00">SABGOM</h3>
+                <p class="inside-margin"><span
+                        class="label label-success">The South Atlantic Bight - Gulf of Mexico</span> (SABGOM) model is a
+                    three-dimensional marine environment
                     nowcast and forecast model developed by the Ocean Observing and Modeling Group. This system provides
                     predictions of ocean circulation, wave, and atmosphere conditions over the South Atlantic Bight and
                     Gulf of Mexico on a daily basis. The model domain covers the U.S. east coast from New Jersey
@@ -132,7 +143,7 @@
                     Sea, and western edge of the Sargasso Sea.
                     <br>Maps of model-generated regional dynamics are organized into four sections:
 
-                <ul>
+                <ul class="inside-margin">
                     <li><b>Marine Weather</b>, with variables of wind speed at 10 m above sea surface, air temperature
                         at 2 m above sea surface, and sea-level air pressure;
                     </li>
@@ -142,14 +153,231 @@
                     </li>
                     <li><b>Marine Ecosystem</b>, with variables of chlorophyll, phytoplankton, and zooplankton.</li>
                 </ul>
-                <p style="margin: 20px">Details of the model and its verification can be found in Xue, Z., J. Zambon, Z. Yao, Y. Liu, and R.
+                <p class="inside-margin">Details of the model and its verification can be found in Xue, Z., J. Zambon,
+                    Z.
+                    Yao, Y. Liu, and R.
                     He (2015) An integrated ocean circulation, wave, atmosphere, and marine ecosystem prediction system
                     for the South Atlantic Bight and Gulf of Mexico, <i>Journal of Operational Oceanography</i>,
-                    doi:10.1080/1755876X.2015.1014667. <a href="Publications/Xue_etal_JOO_2015_redact.pdf">[PDF]</a></p>
+                    doi:10.1080/1755876X.2015.1014667. <a href="Publications/Xue_etal_JOO_2015_redact.pdf">[PDF]</a>
+
+
+                </p>
+
+                <a class="inside-margin" href="http://omgsrv1.meas.ncsu.edu:8080/ocean-circulation/">Go to SABGOM
+                    site</a>
+
+
             </div>
         </div>
 
-        
+        <!-- To add a new product copy from here to ........ -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <div class=" item"><img class="img-responsive" alt="CNAPS"
+                                    style="width: 140px; height: 140px; float:left;margin-right: 15px"
+                                    src="./images/product_images/GoM_HAB_thumb.JPG"
+                                    data-holder-rendered="true">
+                <h3 style="margin-top: 15px;color: #ffff00">Harmful Algal Blooms in the Gulf of Maine</h3>
+                <p class="inside-margin">Weekly forecasts of blooms of the harmful alga <i>Alexandrium fundyense</i> in
+                    the Gulf of Maine are
+                    made each spring and summer using a coupled physical - biological model. The coupled system consists
+                    of a state-of-the-art, free-surface primitive equation Regional Ocean Modeling System (ROMS)
+                    tailored for the Gulf of Maine using a multinested configuration and a population dynamics model for
+                    <i>A. fundyense</i>. The system is forced by realistic momentum and buoyancy fluxes, tides, river
+                    runoff, observed <i>A. fundyense</i> benthic cyst abundance, and climatological nutrient fields.
+                </p>
+                <p class="inside-margin">Details of the model and its verification can be found in
+                <ul>
+                    <li>He, R. and D. J. McGillicuddy (2008), Historic 2005 toxic bloom of Alexandrium fundyense in the
+                        west Gulf of Maine: 1. In situ observations of coastal hydrography and circulation. Journal of
+                        Geophysical Research, 113,C07039, doi:10.1029/2007JC004691. <a
+                                href="publications/HE_JGR2008_part1.pdf">[PDF]</a></li>
+                    <li>He, R., D. J. McGillicuddy, B. A. Keafer, and D. M. Anderson (2008), Historic 2005 toxic bloom
+                        ofAlexandrium fundyense in the western Gulf of Maine: 2. Coupled biophysical numerical modeling,
+                        <i>Journal of Geophysical Research</i>, 113(C7). <a href="publications/HE_JGR2008_part2.pdf">[PDF]</a>
+                    </li>
+                </ul>
+
+
+                <br>
+                <p class="inside-margin">To subscribe to the seasonal weekly newsletter reporting bloom predictions,
+                    contact us at
+                    OceanObservingAndModeling [at] ncsu [dot] edu.<br>
+                    Data from the model predictions of past years can be viewed by clicking the buttons below:</p>
+                <table style="text-align:center" border="1px solid white" border-collapse="collapse"
+                       class="table table-responsive inside-margin">
+                    <tr>
+                        <th rowspan="2">Year</th>
+                        <th colspan="2D">Hindcast</th>
+                        <th rowspan="2">Weekly Nowcast/Forecast</th>
+                        <th colspan="2D">Seasonal Ensemble</th>
+                    </tr>
+                    <tr>
+                        <th>2D</th>
+                        <th>3D</th>
+                        <th>2D</th>
+                        <th>3D</th>
+                    </tr>
+                    <tr>
+                        <td>2005</td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2005/hindcast/">&#9898;</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2006</td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2006/hindcast/2d/">&#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2006/hindcast/3d/">&#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2006/weekly_nowcast_forecast/">
+                            &#9898;</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2007</td>
+                        <td></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2007/hindcast/07hind_3d.gif">
+                            &#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2007/weekly_nowcast_forecast/">
+                            &#9898;</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2008/hindcast/2d/08hindcast.gif">
+                            &#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2008/hindcast/3d/">&#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2008/weekly_nowcast_forecast/">
+                            &#9898;</a></td>
+                        <td>
+                            <a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2008/seasonal_ensemble/2d/08ensemble_2d.gif">
+                                &#9898;</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2009</td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2009/hindcast/2d/">&#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2009/hindcast/3d/">&#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2009/weekly_nowcast_forecast/">
+                            &#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2009/seasonal_ensemble/2d/">
+                            &#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2009/seasonal_ensemble/3d/">
+                            &#9898;</a></td>
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2010/weekly_nowcast_forecast/">
+                            &#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2010/seasonal_ensemble/2d/">
+                            &#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2010/seasonal_ensemble/3d/">
+                            &#9898;</a></td>
+                    </tr>
+                    <tr>
+                        <td>2011</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2011/weekly_nowcast_forecast/">
+                            &#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2011/seasonal_ensemble/2d/">
+                            &#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2011/seasonal_ensemble/3d/">
+                            &#9898;</a></td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2012/weekly_nowcast_forecast/">
+                            &#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2012/seasonal_ensemble/2d/">
+                            &#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2012/seasonal_ensemble/3d/">
+                            &#9898;</a></td>
+                    </tr>
+                    <tr>
+                        <td>2013</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2013/weekly_nowcast_forecast/">
+                            &#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2013/seasonal_ensemble/2d/">
+                            &#9898;</a></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2013/seasonal_ensemble/3d/">
+                            &#9898;</a></td>
+                    </tr>
+                    <tr>
+                        <td>2014</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2014/weekly_nowcast_forecast/">
+                            &#9898;</a></td>
+                        <td>
+                            <a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2014/seasonal_ensemble/2d/14ensemble_2d.gif">
+                                &#9898;</a></td>
+                        <td>
+                            <a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2014/seasonal_ensemble/3d/14ensemble_3d.gif">
+                                &#9898;</a></td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2015/weekly_nowcast_forecast/dino_2d.htm">
+                                &#9898;</a></td>
+                        <td>
+                            <a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2015/seasonal_ensemble/15ensemble_2d.gif">
+                                &#9898;</a></td>
+                        <td>
+                            <a href="http://omgsrv1.meas.ncsu.edu/GoMaine_Redtide/2015/seasonal_ensemble/15ensemble_3d.gif">
+                                &#9898;</a></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <!-- ...........to here-->
+
+        <!-- To add a new product copy from here to ........ -->
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+
+            <div class=" item">
+                <img src="./images/product_images/GoM_CF_SST_thumb.JPG" alt="cloud-free Gulf of Maine" width="200"
+                     height="100">
+                </td>
+                <td><h2 id="GoM">Gulf of Maine Cloud-Free SST and Chl-a</h2>
+                    <p>Complete maps, unobscured by cloud cover, of sea surface temperature (SST) and chlorophyll a
+                        (Chl-a) are available for the Gulf of Maine from 2003 to 2012. These accurate space and time
+                        reconstructions of cloud-covered ocean surface have been created using the Data
+                        INterpolating Empirical Orthogonal Function (DINEOF) applied to MODIS data
+                        (http://modis.gsfc.nasa.gov/). This method identifies dominant spatial and temporal patterns
+                        and fills in missing (cloud-covered) points accordingly. Original satellite data, with
+                        surface osbcured by clouds, and reconstructions can be viewed side by side at each site.<br>
+                        For details, see Li, Y. and R. He (2014) Spatial and temporal variability of SST and ocean
+                        color in the Gulf of Maine based on cloud-free SST and chlorophyll reconstructions in
+                        2003-2012, <i>Remote Sensing of Environment</i> 144(2014) 988-108. <a
+                                href="publications/LiandHe_2014_RSE.pdf">[PDF]</a>
+
+                    </p>
+                </td>
+                </tr>
+
+                <a class="inside-margin" href="http://omglnx3.meas.ncsu.edu/yli/transfer/dineof/sst/all/sstall.htm"> Go
+                    to Gulf of
+                    Maine cloud-free SST site</a>
+                <br>
+                <a class="inside-margin" href="http://omglnx3.meas.ncsu.edu/yli/transfer/dineof/chla/all/chlaall.htm">
+                    Go to Gulf of Maine cloud-free Chl-a site</a>
+            </div>
+        </div>
+        <!-- ...........to here-->
 
 
     </div>
