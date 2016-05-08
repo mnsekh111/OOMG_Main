@@ -66,25 +66,23 @@
 </nav>
 <section>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 outer_padding">
-                <div class="outer_margin">
-                    <div class="text-center item"><img class="img-circle" alt="140x140"
-                                                       style="width: 140px; height: 140px;"
-                                                       src="images/140X140.gif" data-holder-rendered="true">
-                        <h3>Dr. Ruoying "Roy" He</h3>
-                        <p> Distinguished Professor, OOMG Director<br>
-                            Department of Marine, Earth & Atmospheric Sciences<br>
-                            North Carolina State University<br>
-                            Office: 4149 Jordan Hall <br>
-                            Phone: 919-513-0249<br>
-                            Email: rhe [at] ncsu [dot] edu<br>
-                            <a href="http://www.meas.ncsu.edu/faculty/he/he.html"> Web site</a><br>
-                            <a href="https://www.google.com/calendar/embed?src=rhe%40ncsu.edu&ctz=America/New_York">Availability</a>
-                        </p>
-                    </div>
-                </div>
+        <div class="row" align="center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <button class="btn btn-warning" id="btnCurrent">Current</button>
+                <button class="btn btn-warning" id="btnAlum">Alumni</button>
             </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="peopleList">
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 outer_padding">
                 <div class="outer_margin">
                     <div class="text-center item"><img class="img-circle" alt="140x140"
@@ -228,5 +226,65 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
+<script src="js/people.js"></script>
+<script>
+    $("#btnCurrent").on("click",function(){
+        $("#peopleList").empty()
+
+        var i = 0;
+        var len = people.length;
+        for (i = 0; i < len; i++) {
+            var newItem =
+                    $("#peopleList").append('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 outer_padding">\
+                            <div class="outer_margin">\
+                    <div class="text-center item"><img class="img-circle" alt="140x140"\
+            style="width: 140px; height: 140px;"\
+            src="'+people[i].photo +'" data-holder-rendered="true">\
+                    <h3>'+people[i].name+'</h3>\
+            <p>Office : '+people[i].office+'</p>\
+            <p>Phone  :'+people[i].phone+'</p>\
+            <p>Email  :'+people[i].email+'</p>\
+            <p><a href="'+people[i].website+'">Website</a></p>\
+            <p><a href="'+people[i].availability+'">Availability</a></p>\
+            </p>\
+            </div>\
+            </div>\
+            </div>');
+        }
+
+    });
+
+
+    $("#btnAlum").on("click",function(){
+        $("#peopleList").empty()
+
+        var i = 0;
+        var len = past_project_list.length;
+        for (i = 0; i < len; i++) {
+            var newItem =
+                    $("#projList").append('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 outer_padding">\
+                    <div class="outer_margin" style="margin">\
+                        <div class="item">\
+                        <div class="row"> \
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">\
+                                <img class="img-circle" alt="140x140"\
+                                                           style="width: 60px; height: 60px;"\
+                                                           src="' + past_project_list[i].icon + '" data-holder-rendered="true"/>\
+                            </div>\
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">\
+                               <span class="label label-success">Sponsor : <br> '+past_project_list[i].sponsor +'</span>\
+                            </div>\
+                            <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">\
+                                <a class="label label-info" href="projects/PEACH.html">More info</a>\
+                            </div>\
+                        </div>\
+                            <h5>' + past_project_list[i].name + '</h5>\
+                        </div>\
+                    </div>');
+        }
+    });
+
+    $("#btnCurrent").click()
+</script>
 </body>
 </html>
