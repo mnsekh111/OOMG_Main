@@ -23,6 +23,12 @@
             height: 400px;
         }
 
+        .item2{
+            background-color: #0249B7;
+            color: white;
+            height: 320px;
+        }
+
         .global_background {
             background-color: #001162;
             color: #FFFFFF;
@@ -98,7 +104,7 @@
                     $("#peopleList").append('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 outer_padding">\
                             <div class="outer_margin">\
                     <div class="text-center item"><img class="img-circle" alt="140x140"\
-            style="width: 120px; height: 120px;"\
+            style="width: 100px; height: 120px;"\
             src="'+people[i].photo +'" data-holder-rendered="true">\
                     <h3>'+people[i].name+'</h3>\
             <p>'+people[i].info+'</p>\
@@ -125,17 +131,11 @@
             var newItem =
                     $("#peopleList").append('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 outer_padding">\
                             <div class="outer_margin">\
-                    <div class="text-center item"><img class="img-circle" alt="140x140"\
-            style="max-width: 120px; max-height: 120px;"\
+                    <div class="text-center item2"><img class="img-circle" alt="140x140"\
+            style="max-width: 100px; max-height: 120px;"\
             src="'+alumni[i].photo +'" data-holder-rendered="true">\
                     <h3>'+alumni[i].name+'</h3>\
                     \<p>'+alumni[i].info+'</p>\
-            <p>Office : '+alumni[i].office+'</p>\
-            <p>Phone  :'+alumni[i].phone+'</p>\
-            <p>Email  :'+alumni[i].email+'</p>\
-            <p><a href="'+alumni[i].website+'">Website</a></p>\
-            <p><a href="'+alumni[i].availability+'">Availability</a></p>\
-            </p>\
             </div>\
             </div>\
             </div>');
