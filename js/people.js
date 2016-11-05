@@ -69,8 +69,8 @@ people = [
         "focus: data assimilation; ocean modeling; machine learning",
         office: "4133 Jordan Hall",
         phone: "",
-        email: "",
-        website: "xzeng2 [at] ncsu [dot] edu",
+        email: "xzeng2 [at] ncsu [dot] edu",
+        website: "",
         availability: "",
         photo: "images/people_images//image022.jpg"
 
@@ -82,8 +82,8 @@ people = [
         "focus: marine ecosystem and ocean dynamics modeling",
         office: "4145 Jordan Hall",
         phone: "",
-        email: "",
-        website: " lcmcgee [at] ncsu [dot] edu",
+        email: "lcmcgee [at] ncsu [dot] edu",
+        website: "",
         availability: "",
         photo: "images/people_images//imagelaura.jpg"
 

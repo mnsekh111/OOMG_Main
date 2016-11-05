@@ -19,13 +19,23 @@
    		function peopleViewModel() {
        		this.people = ko.observableArray(people);
 	   		this.alumni = ko.observableArray(alumni);
-			this.is
    		}
    // Activates knockout.js
    ko.applyBindings(new peopleViewModel());
    });
    
 </script>
+<style>
+	.links{
+		padding:8px
+	}
+	a.links:visited{
+		color:#B9B9B9
+	}
+	.links a:hover{
+		color:#B9B9B9
+	}
+</style>
 </head>
 
 <body class="global_background">
@@ -63,11 +73,11 @@
           <h5 data-bind="html: info" style="color:#F5CE00"  align="center"></h5>
           <div style="color:white"> 
           <ul>
-           <div><span class="glyphicon glyphicon-briefcase" ></span><span style="padding:5px" data-bind="text: office"></span></div>
-           <div data-bind="visible:"><span class="glyphicon glyphicon-envelope" ></span><span style="padding:5px" data-bind="text: email"></span></div>
-           <div><span class="glyphicon glyphicon-earphone" ></span><span style="padding:5px" data-bind="text: phone"></span></div>
-           <div><span class="glyphicon glyphicon-globe"></span><a style="padding:5px" data-bind="attr:{href:website}">Website</a></div>
-           <div><span class="glyphicon glyphicon-calendar" ></span><a style="padding:5px" data-bind="attr:{href:availability}">Calendar</a></div>
+           <div data-bind="visible:office.length > 0"><span class="glyphicon glyphicon-briefcase" ></span><span class="links" data-bind="text: office"></span></div>
+           <div data-bind="visible:email.length > 0"><span class="glyphicon glyphicon-envelope" ></span><span class="links" data-bind="text: email"></span></div>
+           <div data-bind="visible:phone.length > 0"><span class="glyphicon glyphicon-earphone" ></span><span class="links" data-bind="text: phone"></span></div>
+           <div data-bind="visible:website.length > 0"><span class="glyphicon glyphicon-globe"></span><a class="links" data-bind="attr:{href:website}">Website</a></div>
+           <div data-bind="visible:availability.length > 0"><span class="glyphicon glyphicon-calendar" ></span><a class="links" data-bind="attr:{href:availability}">Calendar</a></div>
           </ul> 
           </div>
         </div>
