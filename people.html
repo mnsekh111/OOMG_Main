@@ -65,6 +65,7 @@
       </div>
     </nav>
   </div>
+  <h1 align="center" style="padding:10px"><span class="label label-success">Members</span></h1>
   <div class="row  row-flex row-flex-wrap" data-bind="foreach: people">
     <div class="col-lg-3 col-md-3 col-sm-6" >
       <div class="thumbnail item"> <img data-bind="attr:{src:photo}" width="75px" height="90px">
@@ -85,6 +86,29 @@
       </div>
     </div>
   </div>
+  
+  <h1 align="center" style="padding:10px"><span class="label label-success">Alumni</span></h1>
+  <div class="row  row-flex row-flex-wrap" data-bind="foreach: alumni">
+    <div class="col-lg-3 col-md-3 col-sm-6" >
+      <div class="thumbnail item-sec"> <img data-bind="attr:{src:photo}" width="75px" height="90px">
+        <div class="caption">
+          <h4 data-bind="text: name" style="color:#F5CE00"  align="center"></h4>
+          <h5 data-bind="html: info" style="color:#F5CE00"  align="center"></h5>
+          <div style="color:white"> 
+          <ul>
+           <div data-bind="visible:office.length > 0"><span class="glyphicon glyphicon-briefcase" ></span><span class="links" data-bind="text: office"></span></div>
+           <div data-bind="visible:email.length > 0"><span class="glyphicon glyphicon-envelope" ></span><span class="links" data-bind="text: email"></span></div>
+           <div data-bind="visible:phone.length > 0"><span class="glyphicon glyphicon-earphone" ></span><span class="links" data-bind="text: phone"></span></div>
+           <div data-bind="visible:website.length > 0"><span class="glyphicon glyphicon-globe"></span><a class="links" data-bind="attr:{href:website}">Website</a></div>
+           <div data-bind="visible:availability.length > 0"><span class="glyphicon glyphicon-calendar" ></span><a class="links" data-bind="attr:{href:availability}">Calendar</a></div>
+          </ul> 
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
 </div>
 <footer id="footer">
   <div class="container-fluid">
