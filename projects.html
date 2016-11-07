@@ -81,6 +81,20 @@ a.links:visited {
     </li>
   </ul>
   <h1 align="center" style="padding:10px"><span class="label label-success">Past Projects</span></h1>
+  <ul class="list-group" data-bind="foreach:past_project_list" >
+    <li class="list-group-item item-proj">
+      <div class="media">
+        <div class="media-left media-middle">
+          <a href="#"><img class="media-object" data-bind="attr:{src:icon}"></a>
+        </div>
+        <div class="media-body" >
+          <h4 class="media-heading" data-bind="text:name"></h4>
+          <h5>Sponsor : <span data-bind="text:sponsor"></span></h5>
+        </div>
+
+      </div>
+    </li>
+  </ul>
 </div>
 <footer id="footer">
   <div class="container-fluid">
