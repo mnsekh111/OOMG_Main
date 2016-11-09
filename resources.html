@@ -2,163 +2,196 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resources</title>
-
+    <title>Home</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/knockout-3.4.0.js" defer="defer"></script>
+    <script>
+        <!-- This is called "viewmodel". This javascript section defines the data and behavior of UI -->
+        $(document).ready(function () {
+            function peopleViewModel() {
+                this.people = ko.observableArray(people);
+                this.alumni = ko.observableArray(alumni);
+            }
+
+            // Activates knockout.js
+            ko.applyBindings(new peopleViewModel());
+        });
+
+    </script>
     <style>
 
-        .item {
-            background-color: #0249B7;
-            color: white;
-        }
-
-        .global_background {
-            background-color: #001162;
-            color: #FFFFFF;
-        }
-
-        .navbar_margin {
-            margin-top: 0px;
-            margin-bottom: 10px;
-        }
-
         a {
-            color: #ec971f;
+            color: #eb9316;
         }
+
+        a:visited {
+            color: #B9B9B9
+        }
+
         a:hover {
-            color:whitesmoke;
+            color: #B9B9B9
         }
     </style>
 </head>
 <body class="global_background">
-<nav class="navbar navbar-inverse navbar_margin" style="background-color:#014c8c">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1"
-                    aria-expanded="false"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
-                <span class="icon-bar"></span> <span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="#">OOMG</a></div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="myDefaultNavbar1">
-            <ul class="nav navbar-nav" style="font-size: large">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="publication.html">Publications</a></li>
-                <li style="background-color: #01315a"><a href="resources.html">Resources</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="photos.html">Photos</a></li>
-                <li><a href="opportunity.html">Opportunities</a></li>
-            </ul>
-            </li>
-            </ul>
-            </form>
-        </div>
-        <!-- /.navbar-collapse -->
+<div class="container">
+    <div style="background:url(images/banner.png) ;color:white;margin-bottom: 2px;padding:30px">
+        <h1>CNAPS</h1>
+        <p>Coupled Northwest Atlantic Prediction System</p>
     </div>
-    <!-- /.container-fluid -->
-</nav>
-<section>
-    <div class="container">
-        <div class="row item">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <h1>Databases</h1>
-                <ul>
-                    <li>
-                        <a href="http://www.aviso.oceanobs.com/en/data/product-information/information-about-mono-and-multi-mission-processing/ssaltoduacs-multimission-altimeter-products.html">AVISO</a>
-                    </li>
-                    <li><a href="http://www.esrl.noaa.gov/psd/data/climateindices/list/">Climate Indices from NOAA's
-                        Earth System Research Laboratory</a></li>
-                    <li>
-                        <a href="http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/DEM/iso/xml/301.xml&view=getDataView&header=none">ETOPO2v2</a>
-                    </li>
-                    <li><a href="http://www.aoml.noaa.gov/phod/floridacurrent/data_access.php">Florida Current Transport
-                        and Western Boundary Time Series data</a></li>
-                    <li>
-                        <a href="http://gcmd.nasa.gov/KeywordSearch/Metadata.do?Portal=NASA&KeywordPath=Locations%7CVERTICAL+LOCATION%7CBOUNDARY+LAYER&EntryId=GISS_GCSS-DIME_GALE&MetadataView=Full&MetadataType=0&lbnode=mdlb3">Genesis
-                            of Atlantic Lows Experiment (GALE)</a></li>
-                    <li><a href="http://data1.gfdl.noaa.gov/">Geophysical Fluid Dynamics Laboratory (GFDL) Data
-                        Portal</a></li>
-                    <li><a href="http://www.aoml.noaa.gov/phod/dac/index.php">Global Drifter Program, NOAA</a></li>
-                    <li><a href="http://www.usgodae.org/">Global Ocean Data Assimilation Experiment (GODAE)</a></li>
-                    <li><a href="http://sharaku.eorc.jaxa.jp/GSMaP/index.htm">Global Satellite Mapping of Precipitation
-                        (GSMaP)</a></li>
-                    <li><a href="https://data.gulfresearchinitiative.org/">Gulf of Mexico Research Initiative databases
-                        (GRIIDC)</a></li>
-                    <li><a href="http://cordc.ucsd.edu/projects/mapping/">HFRadar Network (HFRNet)</a></li>
-
-                    <li><a href="http://www.ipcc.ch/publications_and_data/publications_and_data_reports.shtml">Intergovernmental
-                        Panel on Climate Change (IPCC) Publications and Data</a></li>
-                    <li><a href="http://modis.gsfc.nasa.gov/data/">Moderate Resolution Imaging Spectroradiometer
-                        (MODIS)</a></li>
-                    <li><a href="http://www.ndbc.noaa.gov/">National Data Buoy Center (NDBC)</a></li>
-                    <li><a href="http://www.nodc.noaa.gov/">National Oceanographic Data Center (NODC)</a></li>
-                    <li><a href="http://rda.ucar.edu/datasets/ds083.2/">NCEP FNL Operational Model Global Tropospheric
-                        Analyses</a></li>
-                    <li><a href="http://www.esrl.noaa.gov/psd/data/gridded/data.narr.html">NCEP North American Regional
-                        Reanalysis (NARR)</a></li>
-                    <li><a href="http://www.neracoos.org/datatools">Northeastern Regional Association of Coastal and
-                        Ocean Observing Systems (NERACOOS) Data & Tools</a></li>
-                    <li><a href="http://www.atmos.umd.edu/~ocean/">Simple Ocean Data Assimilation (SODA)</a></li>
-                    <li><a href="http://secoora.org/data">Southeast Coastal and Ocean Observing Regional Association
-                        (SECOORA) Data & Maps</a></li>
-                    <li><a href="http://waterdata.usgs.gov/nwis/sw">USGS Surface Water Data (river runoff)</a></li>
-                </ul>
-
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-
-                <h1>Models</h1>
-                <ul>
-                    <li><a href="http://adcirc.org/">ADCIRC</a></li>
-                    <li><a href="http://polar.ncep.noaa.gov/ofs/">Atlantic RTOFS</a></li>
-                    <li><a href="http://www.nrlmry.navy.mil/coamps-web/web/home">Coupled Ocean/Atmosphere Mesoscale
-                        Prediction System (COAMPS)</a></li>
-                    <li><a href="http://woodshole.er.usgs.gov/operations/modeling/COAWST/">Coupled
-                        Ocean-Atmosphere-Wave-Sediment Transport Modeling System (COAWST)</a></li>
-                    <li><a href="http://modb.oce.ulg.ac.be/mediawiki/index.php/DINEOF">Data INterpolating Empirical
-                        Orthogonal Function (DINEOF)</a></li>
-                    <li><a href="http://www.ngdc.noaa.gov/mgg/global/global.html">ETOPO1</a></li>
-                    <li><a href="http://www.gfdl.noaa.gov/visualizations-climate-prediction/">Geophysical Fluid Dynamics
-                        Laboratory (GFDL) Climate Prediction Models</a></li>
-                    <li>
-                        <a href="http://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs/">Global
-                            Forecast System (GFS)</a></li>
-                    <li><a href="http://hycom.org/">HYbrid Coordinate Ocean Model (HYCOM)</a></li>
-                    <li><a href="http://www.whoi.edu/science/PO/hydrobase/php/index.php">HydroBase 3</a></li>
-                    <li><a href="http://www.mcs.anl.gov/research/projects/mct/">Model Coupling Toolkit</a></li>
-                    <li><a href="http://polar.ncep.noaa.gov/global/">NCEP Global Real-Time Ocean Forecast System
-                        (RTOFS)</a></li>
-                    <li><a href="http://volkov.oce.orst.edu/tides/global.html">OSU TOPEX/ Poseidon Global Inverse
-                        Soution TPXO</a></li>
-                    <li><a href="http://volkov.oce.orst.edu/tides/region.html">OTIS Regional Tidal Solutions</a></li>
-                    <li><a href="http://www.aos.princeton.edu/WWWPUBLIC/PROFS/NewPOMPage.html">Princeton Ocean Model</a>
-                    </li>
-                    <li><a href="https://www.myroms.org/">Regional Ocean Modeling System (ROMS)</a></li>
-                    <li><a href="http://swanmodel.sourceforge.net/download/download.htm">Simulating WAves Nearshore
-                        (SWAN)</a></li>
-                    <li><a href="http://polar.ncep.noaa.gov/waves/index2.shtml">WaveWatch III</a></li>
-                    <li><a href="http://www.wrf-model.org/index.php">Weather Research & Forecasting Model (WRF)</a></li>
-
+    <div>
+        <nav role="navigation" class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle"><span
+                        class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <a href="#" style="background-color: #0A38B5;color: white" class="navbar-brand">OOMG</a></div>
+            <!-- Collection of nav links, forms, and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav" style="font-size: large">
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="publication.html">Publications</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="opportunity.html">Opportunities</a></li>
                 </ul>
             </div>
+        </nav>
+    </div>
+</div>
+</body>
+<div class="container">
+    <div class="row row-flex row-flex-wrap">
+
+        <!-- To add a new product copy from here to ........ -->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+            <div class="panel panel-default item">
+                <div class="page-header item">
+                    <h1>Databases</h1>
+                </div>
+
+                <div class="panel-body">
+                    <ul>
+                        <li>
+                            <a href="http://www.aviso.oceanobs.com/en/data/product-information/information-about-mono-and-multi-mission-processing/ssaltoduacs-multimission-altimeter-products.html">AVISO</a>
+                        </li>
+                        <li><a href="http://www.esrl.noaa.gov/psd/data/climateindices/list/">Climate Indices from NOAA's
+                            Earth System Research Laboratory</a></li>
+                        <li>
+                            <a href="http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/DEM/iso/xml/301.xml&view=getDataView&header=none">ETOPO2v2</a>
+                        </li>
+                        <li><a href="http://www.aoml.noaa.gov/phod/floridacurrent/data_access.php">Florida Current
+                            Transport
+                            and Western Boundary Time Series data</a></li>
+                        <li>
+                            <a href="http://gcmd.nasa.gov/KeywordSearch/Metadata.do?Portal=NASA&KeywordPath=Locations%7CVERTICAL+LOCATION%7CBOUNDARY+LAYER&EntryId=GISS_GCSS-DIME_GALE&MetadataView=Full&MetadataType=0&lbnode=mdlb3">Genesis
+                                of Atlantic Lows Experiment (GALE)</a></li>
+                        <li><a href="http://data1.gfdl.noaa.gov/">Geophysical Fluid Dynamics Laboratory (GFDL) Data
+                            Portal</a></li>
+                        <li><a href="http://www.aoml.noaa.gov/phod/dac/index.php">Global Drifter Program, NOAA</a></li>
+                        <li><a href="http://www.usgodae.org/">Global Ocean Data Assimilation Experiment (GODAE)</a></li>
+                        <li><a href="http://sharaku.eorc.jaxa.jp/GSMaP/index.htm">Global Satellite Mapping of
+                            Precipitation
+                            (GSMaP)</a></li>
+                        <li><a href="https://data.gulfresearchinitiative.org/">Gulf of Mexico Research Initiative
+                            databases
+                            (GRIIDC)</a></li>
+                        <li><a href="http://cordc.ucsd.edu/projects/mapping/">HFRadar Network (HFRNet)</a></li>
+
+                        <li><a href="http://www.ipcc.ch/publications_and_data/publications_and_data_reports.shtml">Intergovernmental
+                            Panel on Climate Change (IPCC) Publications and Data</a></li>
+                        <li><a href="http://modis.gsfc.nasa.gov/data/">Moderate Resolution Imaging Spectroradiometer
+                            (MODIS)</a></li>
+                        <li><a href="http://www.ndbc.noaa.gov/">National Data Buoy Center (NDBC)</a></li>
+                        <li><a href="http://www.nodc.noaa.gov/">National Oceanographic Data Center (NODC)</a></li>
+                        <li><a href="http://rda.ucar.edu/datasets/ds083.2/">NCEP FNL Operational Model Global
+                            Tropospheric
+                            Analyses</a></li>
+                        <li><a href="http://www.esrl.noaa.gov/psd/data/gridded/data.narr.html">NCEP North American
+                            Regional
+                            Reanalysis (NARR)</a></li>
+                        <li><a href="http://www.neracoos.org/datatools">Northeastern Regional Association of Coastal and
+                            Ocean Observing Systems (NERACOOS) Data & Tools</a></li>
+                        <li><a href="http://www.atmos.umd.edu/~ocean/">Simple Ocean Data Assimilation (SODA)</a></li>
+                        <li><a href="http://secoora.org/data">Southeast Coastal and Ocean Observing Regional Association
+                            (SECOORA) Data & Maps</a></li>
+                        <li><a href="http://waterdata.usgs.gov/nwis/sw">USGS Surface Water Data (river runoff)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+            <div class="panel panel-default item">
+                <div class="page-header item">
+                    <h1>Models</h1>
+                </div>
+
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="http://adcirc.org/">ADCIRC</a></li>
+                        <li><a href="http://polar.ncep.noaa.gov/ofs/">Atlantic RTOFS</a></li>
+                        <li><a href="http://www.nrlmry.navy.mil/coamps-web/web/home">Coupled Ocean/Atmosphere Mesoscale
+                            Prediction System (COAMPS)</a></li>
+                        <li><a href="http://woodshole.er.usgs.gov/operations/modeling/COAWST/">Coupled
+                            Ocean-Atmosphere-Wave-Sediment Transport Modeling System (COAWST)</a></li>
+                        <li><a href="http://modb.oce.ulg.ac.be/mediawiki/index.php/DINEOF">Data INterpolating Empirical
+                            Orthogonal Function (DINEOF)</a></li>
+                        <li><a href="http://www.ngdc.noaa.gov/mgg/global/global.html">ETOPO1</a></li>
+                        <li><a href="http://www.gfdl.noaa.gov/visualizations-climate-prediction/">Geophysical Fluid
+                            Dynamics
+                            Laboratory (GFDL) Climate Prediction Models</a></li>
+                        <li>
+                            <a href="http://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs/">Global
+                                Forecast System (GFS)</a></li>
+                        <li><a href="http://hycom.org/">HYbrid Coordinate Ocean Model (HYCOM)</a></li>
+                        <li><a href="http://www.whoi.edu/science/PO/hydrobase/php/index.php">HydroBase 3</a></li>
+                        <li><a href="http://www.mcs.anl.gov/research/projects/mct/">Model Coupling Toolkit</a></li>
+                        <li><a href="http://polar.ncep.noaa.gov/global/">NCEP Global Real-Time Ocean Forecast System
+                            (RTOFS)</a></li>
+                        <li><a href="http://volkov.oce.orst.edu/tides/global.html">OSU TOPEX/ Poseidon Global Inverse
+                            Soution TPXO</a></li>
+                        <li><a href="http://volkov.oce.orst.edu/tides/region.html">OTIS Regional Tidal Solutions</a>
+                        </li>
+                        <li><a href="http://www.aos.princeton.edu/WWWPUBLIC/PROFS/NewPOMPage.html">Princeton Ocean
+                            Model</a>
+                        </li>
+                        <li><a href="https://www.myroms.org/">Regional Ocean Modeling System (ROMS)</a></li>
+                        <li><a href="http://swanmodel.sourceforge.net/download/download.htm">Simulating WAves Nearshore
+                            (SWAN)</a></li>
+                        <li><a href="http://polar.ncep.noaa.gov/waves/index2.shtml">WaveWatch III</a></li>
+                        <li><a href="http://www.wrf-model.org/index.php">Weather Research & Forecasting Model (WRF)</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-
-</section>
+</div>
 
 <!-- / FOOTER -->
 
-<footer id="footer" class="jumbotron" style="background-color: #2f2f2f;color:white;margin-top: 70px;margin-bottom: 0px">
+<footer id="footer" class="jumbotron"
+        style="background-color: #2f2f2f;color:white;margin-top: 70px;margin-bottom: 0px">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <a href="https://www.ncsu.edu"><img src="./images/index_images/ncsu.gif" alt="NC State University logo"
+                <a href="https://www.ncsu.edu"><img src="./images/index_images/ncsu.gif"
+                                                    alt="NC State University logo"
                                                     style="width:196px; height:30px;"></a>
                 <br><br>
                 <img src="./images/index_images/index1.jpg" alt="weather buoy" width=100px height=100px>
@@ -175,7 +208,8 @@
                     Raleigh, NC 27695-8208<br>
                 </address>
                 <p></p>
-                <p style="font-size:15px;color: #ec971f;">&copy;Copyright 2016 Ocean Observing and Modeling Group, North
+                <p style="font-size:15px;color: #ec971f;">&copy;Copyright 2016 Ocean Observing and Modeling Group,
+                    North
                     Carolina State
                     University</p>
             </div>

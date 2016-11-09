@@ -1,135 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home</title>
-<!-- Bootstrap -->
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/custom.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/knockout-3.4.0.js" defer="defer"></script>
-<script src="js/people.js"></script>
-<script>
-   <!-- This is called "viewmodel". This javascript section defines the data and behavior of UI -->
-   $(document).ready(function(){
-   		function peopleViewModel() {
-       		this.people = ko.observableArray(people);
-	   		this.alumni = ko.observableArray(alumni);
-   		}
-   // Activates knockout.js
-   ko.applyBindings(new peopleViewModel());
-   });
-   
-</script>
-<style>
-	.links{
-		padding:8px
-	}
-	a.links:visited{
-		color:#B9B9B9
-	}
-	.links a:hover{
-		color:#B9B9B9
-	}
-</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/knockout-3.4.0.js" defer="defer"></script>
+    <script src="js/people.js"></script>
+    <script>
+        <!-- This is called "viewmodel". This javascript section defines the data and behavior of UI -->
+        $(document).ready(function () {
+            function peopleViewModel() {
+                this.people = ko.observableArray(people);
+                this.alumni = ko.observableArray(alumni);
+            }
+
+            // Activates knockout.js
+            ko.applyBindings(new peopleViewModel());
+        });
+
+    </script>
+    <style>
+        .links {
+            padding: 8px
+        }
+
+        a.links:visited {
+            color: #B9B9B9
+        }
+
+        .links a:hover {
+            color: #B9B9B9
+        }
+    </style>
 </head>
 
 <body class="global_background">
 <div class="container">
-  <div  style="background:url(images/banner.png) ;color:white;margin-bottom: 2px;padding:30px">
-    <h1>CNAPS</h1>
-    <p>Coupled Northwest Atlantic Prediction System</p>
-  </div>
-  <div>
-    <nav role="navigation" class="navbar navbar-default"> 
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a href="#" style="background-color: #0A38B5;color: white" class="navbar-brand">OOMG</a> </div>
-      <!-- Collection of nav links, forms, and other content for toggling -->
-      <div id="navbarCollapse" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav" style="font-size: large">
-          <li><a href="people.html">People</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="publication.html">Publications</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="photos.html">Photos</a></li>
-          <li><a href="opportunity.html">Opportunities</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <h1 align="center" style="padding:10px"><span class="label label-success">Members</span></h1>
-  <div class="row  row-flex row-flex-wrap" data-bind="foreach: people">
-    <div class="col-lg-3 col-md-3 col-sm-6" >
-      <div class="thumbnail item"> <img data-bind="attr:{src:photo}" width="75px" height="90px">
-        <div class="caption">
-          <h4 data-bind="text: name" style="color:#F5CE00"  align="center"></h4>
-          <h5 data-bind="html: info" style="color:#F5CE00"  align="center"></h5>
-          <div style="color:white"> 
-          <ul>
-           <div data-bind="visible:office.length > 0"><span class="glyphicon glyphicon-briefcase" ></span><span class="links" data-bind="text: office"></span></div>
-           <div data-bind="visible:email.length > 0"><span class="glyphicon glyphicon-envelope" ></span><span class="links" data-bind="text: email"></span></div>
-           <div data-bind="visible:phone.length > 0"><span class="glyphicon glyphicon-earphone" ></span><span class="links" data-bind="text: phone"></span></div>
-           <div data-bind="visible:website.length > 0"><span class="glyphicon glyphicon-globe"></span><a class="links" data-bind="attr:{href:website}">Website</a></div>
-           <div data-bind="visible:availability.length > 0"><span class="glyphicon glyphicon-calendar" ></span><a class="links" data-bind="attr:{href:availability}">Calendar</a></div>
-          </ul> 
-          </div>
-        </div>
-        
-      </div>
+    <div style="background:url(images/banner.png) ;color:white;margin-bottom: 2px;padding:30px">
+        <h1>CNAPS</h1>
+        <p>Coupled Northwest Atlantic Prediction System</p>
     </div>
-  </div>
-  
-  <h1 align="center" style="padding:10px"><span class="label label-success">Alumni</span></h1>
-  <div class="row  row-flex row-flex-wrap" data-bind="foreach: alumni">
-    <div class="col-lg-3 col-md-3 col-sm-6" >
-      <div class="thumbnail item-sec"> <img data-bind="attr:{src:photo}" width="75px" height="90px">
-        <div class="caption">
-          <h4 data-bind="text: name" style="color:#F5CE00"  align="center"></h4>
-          <h5 data-bind="html: info" style="color:#F5CE00"  align="center"></h5>
-          <div style="color:white"> 
-          <ul>
-           <div data-bind="visible:office.length > 0"><span class="glyphicon glyphicon-briefcase" ></span><span class="links" data-bind="text: office"></span></div>
-           <div data-bind="visible:email.length > 0"><span class="glyphicon glyphicon-envelope" ></span><span class="links" data-bind="text: email"></span></div>
-           <div data-bind="visible:phone.length > 0"><span class="glyphicon glyphicon-earphone" ></span><span class="links" data-bind="text: phone"></span></div>
-           <div data-bind="visible:website.length > 0"><span class="glyphicon glyphicon-globe"></span><a class="links" data-bind="attr:{href:website}">Website</a></div>
-           <div data-bind="visible:availability.length > 0"><span class="glyphicon glyphicon-calendar" ></span><a class="links" data-bind="attr:{href:availability}">Calendar</a></div>
-          </ul> 
-          </div>
-        </div>
-        
-      </div>
+    <div>
+        <nav role="navigation" class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle"><span
+                        class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <a href="#" style="background-color: #0A38B5;color: white" class="navbar-brand">OOMG</a></div>
+            <!-- Collection of nav links, forms, and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav" style="font-size: large">
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="publication.html">Publications</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="opportunity.html">Opportunities</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
-  </div>
-  
+    <h1 align="center" style="padding:10px"><span class="label label-success">Members</span></h1>
+    <div class="row  row-flex row-flex-wrap" data-bind="foreach: people">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="thumbnail item"><img data-bind="attr:{src:photo}" width="75px" height="90px">
+                <div class="caption">
+                    <h4 data-bind="text: name" style="color:#F5CE00" align="center"></h4>
+                    <h5 data-bind="html: info" style="color:#F5CE00" align="center"></h5>
+                    <div style="color:white">
+                        <ul>
+                            <div data-bind="visible:office.length > 0"><span
+                                    class="glyphicon glyphicon-briefcase"></span><span class="links"
+                                                                                       data-bind="text: office"></span>
+                            </div>
+                            <div data-bind="visible:email.length > 0"><span class="glyphicon glyphicon-envelope"></span><span
+                                    class="links" data-bind="text: email"></span></div>
+                            <div data-bind="visible:phone.length > 0"><span class="glyphicon glyphicon-earphone"></span><span
+                                    class="links" data-bind="text: phone"></span></div>
+                            <div data-bind="visible:website.length > 0"><span
+                                    class="glyphicon glyphicon-globe"></span><a class="links"
+                                                                                data-bind="attr:{href:website}">Website</a>
+                            </div>
+                            <div data-bind="visible:availability.length > 0"><span
+                                    class="glyphicon glyphicon-calendar"></span><a class="links"
+                                                                                   data-bind="attr:{href:availability}">Calendar</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <h1 align="center" style="padding:10px"><span class="label label-success">Alumni</span></h1>
+    <div class="row  row-flex row-flex-wrap" data-bind="foreach: alumni">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="thumbnail item-sec"><img data-bind="attr:{src:photo}" width="75px" height="90px">
+                <div class="caption">
+                    <h4 data-bind="text: name" style="color:#F5CE00" align="center"></h4>
+                    <h5 data-bind="html: info" style="color:#F5CE00" align="center"></h5>
+                    <div style="color:white">
+                        <ul>
+                            <div data-bind="visible:office.length > 0"><span
+                                    class="glyphicon glyphicon-briefcase"></span><span class="links"
+                                                                                       data-bind="text: office"></span>
+                            </div>
+                            <div data-bind="visible:email.length > 0"><span class="glyphicon glyphicon-envelope"></span><span
+                                    class="links" data-bind="text: email"></span></div>
+                            <div data-bind="visible:phone.length > 0"><span class="glyphicon glyphicon-earphone"></span><span
+                                    class="links" data-bind="text: phone"></span></div>
+                            <div data-bind="visible:website.length > 0"><span
+                                    class="glyphicon glyphicon-globe"></span><a class="links"
+                                                                                data-bind="attr:{href:website}">Website</a>
+                            </div>
+                            <div data-bind="visible:availability.length > 0"><span
+                                    class="glyphicon glyphicon-calendar"></span><a class="links"
+                                                                                   data-bind="attr:{href:availability}">Calendar</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </div>
-<footer id="footer">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"> <a href="https://www.ncsu.edu"><img src="./images/index_images/ncsu.gif" alt="NC State University logo" style="width:196px; height:30px;"></a> <br>
-        <br>
-        <img src="./images/index_images/index1.jpg" alt="weather buoy" width="100px" height="100px"> <img src="./images/index_images/index2.jpg" alt="autonomous glider" width="100px" height="100px"> <img src="./images/index_images/index3.jpg" alt="satellite image of coast" width="100px" height="100px"><img src="./images/index_images/index4.jpg" alt="color ocean temperature in northern Atlantic Ocean"
-                     width="100px" height="100px"> </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <address>
-        <strong>Mailing Address:</strong><br>
-        2800 Faucette Drive,<br>
-        Jordan Hall, North Carolina State University,<br>
-        Raleigh, NC 27695-8208<br>
-        </address>
-        <p></p>
-        <p style="font-size:15px;color: #ec971f;">&copy;Copyright 2016 Ocean Observing and Modeling Group, North Carolina State
-          University</p>
-      </div>
+
+<!-- / FOOTER -->
+<footer id="footer" class="jumbotron" style="background-color: #2f2f2f;color:white;margin-top: 70px;margin-bottom: 0px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <a href="https://www.ncsu.edu"><img src="./images/index_images/ncsu.gif" alt="NC State University logo"
+                                                    style="width:196px; height:30px;"></a>
+                <br><br>
+                <img src="./images/index_images/index1.jpg" alt="weather buoy" width=100px height=100px>
+                <img src="./images/index_images/index2.jpg" alt="autonomous glider" width=100px height=100px>
+                <img src="./images/index_images/index3.jpg" alt="satellite image of coast" width=100px height=100px>
+                <img src="./images/index_images/index4.jpg" alt="color ocean temperature in northern Atlantic Ocean"
+                     width=100px height=100px>
+            </div>
+            <div col-lg-6 col-md-12 col-sm-12 col-xs-12>
+                <address>
+                    <strong>Mailing Address:</strong><br>
+                    2800 Faucette Drive,<br>
+                    Jordan Hall, North Carolina State University,<br>
+                    Raleigh, NC 27695-8208<br>
+                </address>
+                <p></p>
+                <p style="font-size:15px;color: #ec971f;">&copy;Copyright 2016 Ocean Observing and Modeling Group, North
+                    Carolina State
+                    University</p>
+            </div>
+
+
+        </div>
+
     </div>
-  </div>
 </footer>
 </body>
 </html>

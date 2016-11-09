@@ -12,7 +12,6 @@
     <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/knockout-3.4.0.js" defer="defer"></script>
-    <script src="js/people.js"></script>
     <script>
         <!-- This is called "viewmodel". This javascript section defines the data and behavior of UI -->
         $(document).ready(function () {
@@ -28,9 +27,10 @@
     </script>
     <style>
 
-        a{
+        a {
             color: #eb9316;
         }
+
         a:visited {
             color: #B9B9B9
         }
@@ -69,7 +69,7 @@
             </div>
         </nav>
     </div>
-    <div class="row">
+    <div class="row row-flex row-flex-wrap">
 
         <!-- To add a new product copy from here to ........ -->
         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -190,21 +190,27 @@
                                              src="./images/product_images/GoM_HAB_thumb.JPG"
                                              data-holder-rendered="true">
                     <p class="inside-margin">Weekly forecasts of blooms of the harmful alga <i>Alexandrium fundyense</i>
-                        in the Gulf of Maine are made each spring and summer using a coupled physical - biological model.
-                        The coupled system consists of a state-of-the-art, free-surface primitive equation Regional Ocean Modeling System (ROMS)
+                        in the Gulf of Maine are made each spring and summer using a coupled physical - biological
+                        model.
+                        The coupled system consists of a state-of-the-art, free-surface primitive equation Regional
+                        Ocean Modeling System (ROMS)
                         tailored for the Gulf of Maine using a multinested configuration and a population dynamics model
                         for <i>A. fundyense</i>. The system is forced by realistic momentum and buoyancy fluxes, tides,
-                        river runoff, observed <i>A. fundyense</i> benthic cyst abundance, and climatological nutrient fields.
+                        river runoff, observed <i>A. fundyense</i> benthic cyst abundance, and climatological nutrient
+                        fields.
                     </p>
                     <p class="inside-margin">Details of the model and its verification can be found in
                     <ul>
                         <li>He, R. and D. J. McGillicuddy (2008), Historic 2005 toxic bloom of Alexandrium fundyense in
-                            the west Gulf of Maine: 1. In situ observations of coastal hydrography and circulation. Journal
+                            the west Gulf of Maine: 1. In situ observations of coastal hydrography and circulation.
+                            Journal
                             of Geophysical Research, 113,C07039, doi:10.1029/2007JC004691. <a
                                     href="publications/HE_JGR2008_part1.pdf">[PDF]</a></li>
                         <li>He, R., D. J. McGillicuddy, B. A. Keafer, and D. M. Anderson (2008), Historic 2005 toxic
-                            bloom of Alexandrium fundyense in the western Gulf of Maine: 2. Coupled biophysical numerical
-                            modeling, <i>Journal of Geophysical Research</i>, 113(C7). <a href="publications/HE_JGR2008_part2.pdf">[PDF]</a>
+                            bloom of Alexandrium fundyense in the western Gulf of Maine: 2. Coupled biophysical
+                            numerical
+                            modeling, <i>Journal of Geophysical Research</i>, 113(C7). <a
+                                    href="publications/HE_JGR2008_part2.pdf">[PDF]</a>
                         </li>
                     </ul>
 
@@ -367,32 +373,39 @@
                     <h1>Gulf of Maine Cloud-Free SST and Chl-a</h1>
                 </div>
                 <div class="panel-body"><img class="img-responsive" alt="CNAPS"
-                                    style="width: 140px; height: 140px; float:left;margin-right: 15px"
-                                    src="./images/product_images/GoM_CF_SST_thumb.JPG"
-                                    data-holder-rendered="true">
-                <p class="inside-margin">Complete maps, unobscured by cloud cover, of sea surface temperature (SST) and
-                    chlorophyll a (Chl-a) are available for the Gulf of Maine from 2003 to 2012. These accurate space and time reconstructions
-                    of cloud-covered ocean surface have been created using the Data INterpolating Empirical Orthogonal
-                    Function (DINEOF) applied to MODIS data (http://modis.gsfc.nasa.gov/). This method identifies
-                    dominant spatial and temporal patterns and fills in missing (cloud-covered) points accordingly.
-                    Original satellite data, with surface osbcured by clouds, and reconstructions can be viewed side by
-                    side at each site.<br>
-                    For details, see Li, Y. and R. He (2014) Spatial and temporal variability of SST and ocean color in
-                    the Gulf of Maine based on cloud-free SST and chlorophyll reconstructions in 2003-2012, <i>Remote
-                        Sensing of Environment</i> 144(2014) 988-108. <a
-                            href="publications/LiandHe_2014_RSE.pdf">[PDF]</a>
-                </p>
-                <a class="inside-margin" href="http://omglnx3.meas.ncsu.edu/yli/transfer/dineof/sst/all/sstall.htm"> Go
-                    to Gulf of Maine
-                    cloud-free SST site</a>
-                <br>
-                <a class="inside-margin" href="http://omglnx3.meas.ncsu.edu/yli/transfer/dineof/chla/all/chlaall.htm">
-                    Go to Gulf of Maine
-                    cloud-free Chl-a site</a>
+                                             style="width: 140px; height: 140px; float:left;margin-right: 15px"
+                                             src="./images/product_images/GoM_CF_SST_thumb.JPG"
+                                             data-holder-rendered="true">
+                    <p class="inside-margin">Complete maps, unobscured by cloud cover, of sea surface temperature (SST)
+                        and
+                        chlorophyll a (Chl-a) are available for the Gulf of Maine from 2003 to 2012. These accurate
+                        space and time reconstructions
+                        of cloud-covered ocean surface have been created using the Data INterpolating Empirical
+                        Orthogonal
+                        Function (DINEOF) applied to MODIS data (http://modis.gsfc.nasa.gov/). This method identifies
+                        dominant spatial and temporal patterns and fills in missing (cloud-covered) points accordingly.
+                        Original satellite data, with surface osbcured by clouds, and reconstructions can be viewed side
+                        by
+                        side at each site.<br>
+                        For details, see Li, Y. and R. He (2014) Spatial and temporal variability of SST and ocean color
+                        in
+                        the Gulf of Maine based on cloud-free SST and chlorophyll reconstructions in 2003-2012, <i>Remote
+                            Sensing of Environment</i> 144(2014) 988-108. <a
+                                href="publications/LiandHe_2014_RSE.pdf">[PDF]</a>
+                    </p>
+                    <a class="inside-margin" href="http://omglnx3.meas.ncsu.edu/yli/transfer/dineof/sst/all/sstall.htm">
+                        Go
+                        to Gulf of Maine
+                        cloud-free SST site</a>
+                    <br>
+                    <a class="inside-margin"
+                       href="http://omglnx3.meas.ncsu.edu/yli/transfer/dineof/chla/all/chlaall.htm">
+                        Go to Gulf of Maine
+                        cloud-free Chl-a site</a>
 
 
+                </div>
             </div>
-        </div>
         </div>
         <!-- ...........to here-->
 
@@ -434,52 +447,5 @@
 
     </div>
 </footer>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-1.11.3.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.js"></script>
-<script>
-
-    $("#btnPeer").on("click", function () {
-        console.log("SHIT")
-        $("#myList").empty()
-        var i;
-        var len = peer_review_pubs.length;
-        for (i = 0; i < len; i++) {
-            $("#myList").append("<p>" + (len - i) + ".   " + peer_review_pubs[i] + "</p>");
-        }
-    });
-
-    $("#btnInRev").on("click", function () {
-        $("#myList").empty()
-        var i;
-        var len = in_review.length;
-        for (i = 0; i < len; i++) {
-            $("#myList").append("<p>" + (len - i) + ".   " + in_review[i] + "</p>");
-        }
-    });
-
-    $("#btnThes").on("click", function () {
-        $("#myList").empty()
-        var i;
-        var len = the_des.length;
-        for (i = 0; i < len; i++) {
-            $("#myList").append("<p>" + (len - i) + ".   " + the_des[i] + "</p>");
-        }
-    });
-
-    $("#btnTechRep").on("click", function () {
-        $("#myList").empty()
-        var i;
-        var len = tech_rep.length;
-        for (i = 0; i < len; i++) {
-            $("#myList").append("<p>" + (len - i) + ".   " + tech_rep[i] + "</p>");
-        }
-    });
-
-    $("#btnPeer").click()
-
-</script>
 </body>
 </html>
