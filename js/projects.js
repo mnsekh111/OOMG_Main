@@ -2,21 +2,7 @@ project_list = [
     {
         name: "Collaborative Research: An Observational and Modeling Study of the Physical Processes Driving Exchanges between the Shelf and the Deep Ocean At Cape Hatteras ",
         sponsor: "National Science Foundation ",
-        icon: "./images/project_images/nsf.jpg",
-        sponsors: [
-            "National Science Foundation",
-            "Skidaway Institute of Oceanography"
-        ],
-        collaborators: [
-            "University of Georgia Skidaway Institute of Oceanography: Catherine Edwards, Dana Savidge",
-            "University of North Carolina Chapel Hill: John Bane, Harvey Seim",
-            "Woods Hole Oceanographic Institution: Magdalena Andres, Glen Gawarkiewicz, Robert Todd"
-        ],
-        fundingStart: "April 2016",
-        fundingEnd: "March 2020",
-        description: "Subtropical and subpolar oceanic gyre boundaries are characterized by confluent western boundary currents and convergence in the adjacent shelf and slope waters. Together, they lead to large net export of shelf waters to the deep ocean, and complex, bidirectional shelf-deep ocean exchange, in response to strong forcing typical of midlatitude western ocean margins. Shelf-deep ocean exchange processes at such dynamic sites remain poorly understood, due in part to the technical challenge of resolving broad ranges of relevant spatial and temporal scales. This project will deploy fixed, mobile, and remote observational platforms in combination with idealized and realistic numerical simulations to investigate exchange processes near Cape Hatteras. The sampling array will provide unprecedented temporal and spatial resolution in a region of large episodic export and exchange",
-        results: "Work in progress",
-        publications: ""
+        icon: "./images/project_images/nsf.jpg"
     },
 
     {

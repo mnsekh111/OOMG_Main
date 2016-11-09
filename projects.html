@@ -86,60 +86,6 @@
                 </div>
 
             </div>
-
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                 style="color: #0f0f0f">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                    aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel" data-bind="text:name">Modal title</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <b>Sponsored by </b>
-                                    <ul data-bind="foreach:sponsors">
-                                        <li data-bind="text: $data">lol</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <b>Collaborators </b>
-                                    <ul data-bind="foreach:collaborators">
-                                        <li data-bind="text: $data">lol</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <b>Description </b>
-                            <div class="modal-body" data-bind="text:description">
-                            </div>
-
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <b>Results </b>
-                                    <div data-bind="html:results"></div>
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <b>Publication</b>
-                                    <div data-bind="html:publications"></div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </li>
     </ul>
     <h1 align="center" style="padding:10px"><span class="label label-success">Past Projects</span></h1>
     <ul class="list-group" data-bind="foreach:past_project_list">
